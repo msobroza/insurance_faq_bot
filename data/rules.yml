@@ -1,0 +1,13 @@
+version: "2.0"
+
+rules:
+
+- rule: Query FAQ Retrieval pipeline anytime the user has a direct question for your document base
+  steps:
+  - intent: knowledge_question
+  - action: call_haystack
+
+- rule: Ask the user to rephrase whenever they send a message with low NLU confidence
+  steps:
+    - intent: nlu_fallback
+    - action: call_haystack

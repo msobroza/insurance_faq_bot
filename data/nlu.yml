@@ -1,0 +1,13 @@
+version: "2.0"
+
+nlu:
+- intent: knowledge_question
+  examples: |
+    - Pouvez-vous rechercher ceci: qu'est-ce que c'est? 
+    - Regarde ça : qu'est-ce que c'est ?
+    - Pouvez-vous vérifier : qu'est-ce que c'est ?
+    - veuillez vérifier : qu'est-ce que c'est ? 
+    - Peux-tu chercher ça : où est-ce ?
+    - Regarde ça : où est-ce ?
+    - Pouvez-vous vérifier : où est-il ?
+    - veuillez vérifier : où est ?

@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "insurance-conversational-assistant"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+packages = [{include = "insurance_conversational_assistant"}]
+
+[tool.poetry.dependencies]
+python = ">=3.10,<3.11"
+rasa = {extras = ["full"], version = "^3.6.21"}
+pandas = "1.5.3"
+torch = {version = "^2.6.0", allow-prereleases = true}
+torchvision = {version = "^0.21.0", allow-prereleases = true}
+torchaudio = {version = "^2.6.0", allow-prereleases = true}
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.5"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "pytorch-cu121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
+
+
